@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="row gy-4 rrr">
+    <div class="row gy-4">
 
         <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
