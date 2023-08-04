@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'SourceSansProRegular';
+    font-display: swap;
+    src: url('SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansProSemiBold';
+    font-display: swap;
+    src: url('SourceSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansProBold';
+    font-display: swap;
+    src: url('SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansProItalic';
+    font-display: swap;
+    src: url('SourceSansPro-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SourceSansProLight';
+    font-display: swap;
+    src: url('SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
