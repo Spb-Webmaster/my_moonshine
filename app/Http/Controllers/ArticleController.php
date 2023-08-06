@@ -12,6 +12,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
+
+
         $posts = DB::table('articles')
             ->where('active', 1)
             ->orderBy('projectdate', 'desc')

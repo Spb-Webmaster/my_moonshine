@@ -2,6 +2,7 @@
 
 namespace App\MoonShine\Resources;
 
+use App\MoonShine\Fields\ItemAmount;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Article;
 
@@ -58,11 +59,14 @@ class ArticleResource extends Resource
         return [
             ID::make()->sortable(),
 
+
+
+
             Grid::make([
                 Column::make([
                     Block::make('Редактирование', [
 
-
+                        ItemAmount::make('Item amount'),
                         Text::make('Имя', 'title')
                             ->hint('Обязательное поле')
                             //  ->addLink('link', 'https://spb-webmaster.ru', '_blank')

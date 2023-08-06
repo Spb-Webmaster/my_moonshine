@@ -1,26 +1,20 @@
+
 <x-moonshine::table>
 <x-slot:thead>
 
     <th>ID</th>
     <th>title</th>
-    <th>-</th>
+    <th>Фото</th>
 
 </x-slot:thead>
 <x-slot:tbody>
 
-
-    @foreach($items as $item)
         <tr>
-                <td>{{ $item['id'] }}</td>
-                <td>{{ $item['title'] }}</td>
-                <td>
-
-                    <x-moonshine::form.textarea/>
-                    <x-moonshine::icon icon="heroicons.pencil"/>
-
-                </td>
+                <td style="vertical-align: top">{{ $item->id }}</td>
+                <td style="vertical-align: top">{{ $item->title }}</td>
+                <td style="vertical-align: top"><img src="{{ asset('storage/' . $item->img)  }}" /></td>
         </tr>
-    @endforeach
+
 
 </x-slot:tbody>
 

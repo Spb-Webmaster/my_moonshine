@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\MoonShine\Resources\ArticleResource;
 use App\MoonShine\Resources\CategoryResource;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
 use MoonShine\MoonShine;
@@ -38,8 +39,23 @@ class MoonShineServiceProvider extends ServiceProvider
                     'custom',
                     'pages.custom',
                     static function () {
+
+
+
+
+                        $item = DB::table('articles')
+                            ->where('active', 1)
+                            ->inRandomOrder()
+                            ->first();
+
+
+
                         return [
-                            'items' => Http::get('https://dummyjson.com/products')->json('products')
+                            'item' => $item,
+
+                           // 'items' => Http::get('https://dummyjson.com/products')->json('products')
+                           // axeld_test()
+
                         ];
 
                     }
