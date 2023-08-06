@@ -31,8 +31,7 @@
             </td>
             <td>
 
-                <x-moonshine::badge color="green" x-text="amount * qty">
-
+                <x-moonshine::badge color="green" x-text="amount * qty" >
                    0
                 </x-moonshine::badge>
 

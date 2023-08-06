@@ -27,6 +27,7 @@ class Article extends Model
         'active',
         'data',
         'gallery',
+        'item_amount',
     ];
     protected $casts = [
         'data' => 'collection',

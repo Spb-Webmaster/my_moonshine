@@ -14,11 +14,18 @@ class ArticleController extends Controller
     {
 
 
-        $posts = DB::table('articles')
+       $posts = DB::table('articles')
             ->where('active', 1)
-            ->orderBy('projectdate', 'desc')
-            ->get();
-       //dd($posts);
+            ->orderBy('projectdate', 'desc')->paginate(10);
+
+/*
+        $query = Article::query()
+            ->where('active', 1);
+        $posts = $query->latest('projectdate')
+            ->paginate(10);*/
+
+
+        //dd($posts);
 
        // $posts  = Article::latest()->take(2)->get();
 

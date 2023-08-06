@@ -28,9 +28,11 @@
 
                 </div>
             @endforeach
+                {{ $posts->onEachSide(2)->links() }}
 
 
-            <div class="portfolio-description">
+
+                <div class="portfolio-description">
                 <h2>This is an example of portfolio detail</h2>
                 <p>
                     Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia

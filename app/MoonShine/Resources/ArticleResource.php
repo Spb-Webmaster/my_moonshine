@@ -66,7 +66,7 @@ class ArticleResource extends Resource
                 Column::make([
                     Block::make('Редактирование', [
 
-                        ItemAmount::make('Item amount'),
+
                         Text::make('Имя', 'title')
                             ->hint('Обязательное поле')
                             //  ->addLink('link', 'https://spb-webmaster.ru', '_blank')
@@ -145,7 +145,8 @@ class ArticleResource extends Resource
                             ->hideOnIndex()
                         ->select(),
                         SwitchBoolean::make('Опубликовать', 'active'),
-
+                        ItemAmount::make( 'Стоимость', 'Item amount')
+                            ->hideOnIndex(),
                     ]),
                 ])->columnSpan(4),
 
